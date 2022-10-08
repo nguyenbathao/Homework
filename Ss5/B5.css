@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    width: 102px;
+    height: 39px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.888px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.top-bar, .menu {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+.top-bar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50px 700px 50px;
+    column-gap: 200px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0  35px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+ul li a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #404040;
+    position: relative;
+}
+
+ul a::after{
+    content: "";
+    height: 5px;
+    width:0 ;
+    margin-top: 20px;
+    background: #FF7B29;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5 ease-in-out;
+}
+
+ul a::after:hover{
+    width: 70%;
+}
+
+.search{
+    display: flex;
+    width: 186px;
+    height: 52px;
+    background-color: #263FA4;
+    border-radius: 10px;
+}
+
+.img{
+    position: relative;
+    left: 40px;
+    bottom: -17px;
+}
+
+button{
+    border: none;
+    background-color: #263FA4;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 65px;
+}
+
+body .banner{
+    display: flex;
+    width: 100%;
+    padding: 0 35px;
+}
+
+body .banner .ban-info .ban-big-title .txtblack{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    color: #000000;
+}
+
+body .banner .ban-info .ban-big-title .txtblue{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    color: #263FA4;
+}
+
+body .banner .ban-info .ban-desc{
+    width: 498px;
+    height: 87px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+body .banner .ban-info .ban-action .ban-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 22px;
+    gap: 10px;
+    width: 139px;
+    height: 49px;
+    background: #FF7B29;
+    border-radius: 8px;
+}
+
+body .banner .ban-info .ban-action .ban-button:hover{
+    transform: translateX(10px);
+    color: #FFFFFF;
+}
+
+
+
+.btn-icon{
+    width: 48px;
+    height: 48px;
+    line-height: 60px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.19);
+    border-left: 0px solid #FF7B29;
+    border-radius: 100px;
+    gap: 10px;
+
+}
+
+.btn-text{
+    width: 81px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF7B29;
+}
+
+
+
+.banner-img{
+    width: 498px;
+    height: 598px;
+    right: 275px;
+    top: calc(50% - 598px/2);
+
+} 
+
+.item-ban-more{
+    display: block;
+    line-height: 42px;
+    margin-top: 210px;
+    margin-left: 100px;
+}
+.ban-icon1, .ban-icon2, .ban-icon3{
+    display: flex;
+    column-gap: 10px;
+}
+.btn-icon1, .btn-icon2, .btn-icon3{
+    color: #FF7B29;
+    width: 44px;
+    height: 44px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #FF7B29;
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+.txt11, .txt21, .txt31{
+    width: 48px;
+    height: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FF7B29;
+}
+.txt12, .txt22, .txt32{
+    margin-top: 0px;
+}
+.menu{
+    display: grid;
+    width: 100%;
+    grid-template-columns:800px 100px;
+    column-gap: 100px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    padding:0 35px;
+    margin: 0 90px;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 87px;
+    width: 760px;
+    height: 52px;
+    margin-left: 50px;
+}
+
+.txt-menu{
+    width: 200px;
+    height: 50px;
+}
+
+.search2{
+        display: flex;
+        width: 186px;
+        height: 52px;
+        background-color: #FF7B29;
+        border-radius: 15px;
+}
+
+.txt-search{
+    width: 200px;
+    height: 50px;
+}
+
+.menu1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.txt-search{
+    position: relative;
+    left: 40px;
+    bottom: 23px;
+    color: #FFFFFF;
+}
+
+.menu2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
